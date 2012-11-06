@@ -14,9 +14,10 @@ Pod::Spec.new do |s|
                   this framework performs well regardless of whether it\'s being run on an old iPhone, or
                   on a 12-core Mac Pro. (And it won\'t block the main thread... at all).'
   s.requires_arc = true
-  
-  s.source_files = 'Authentication/**/*.{h,m}','Categories','Core','Utilities','Vendor/libidn/idn-int.h','Vendor/libidn/stringprep.h'
-  s.ios.source_files = 'Authentication/**/*.{h,m}','Categories','Core','Utilities','Vendor/libidn/idn-int.h','Vendor/libidn/stringprep.h','Vendor/KissXML/**/*.{h,m}'
+ 
+  #TODO exclude #XMPPFramework.h
+  s.source_files = 'Authentication/**/*.{h,m}','Categories','Core','Utilities','Vendor/libidn/*.h'
+  s.ios.source_files = 'Authentication/**/*.{h,m}','Categories','Core','Utilities','Vendor/libidn/*.h','Vendor/KissXML/**/*.{h,m}'
   s.resource = "Vendor/libidn/libidn.a"
 
   s.libraries = 'xml2','resolv','idn'
