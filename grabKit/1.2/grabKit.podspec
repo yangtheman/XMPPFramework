@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name         = 'grabKit'
-  s.version      = '0.0.1'
-  s.summary      = 'iOS library offering simple and unified methods to retrieve photo albums from social services.'
+  s.version      = '1.2'
+  s.summary      = 'Simple access on iOS to your photos on Facebook, FlickR, Instagram, Picasa, and more.'
   s.homepage     = 'https://github.com/pierrotsmnrd/grabKit'
   s.license      = 'MIT'
   s.author       = { 'Pierre-Olivier Simonard' => 'pierre.olivier.simonard@gmail.com' }
-  s.source       = { :git => 'https://github.com/pierrotsmnrd/grabKit.git', :commit => 'a3da5d3ed5' }
+  s.source       = { :git => 'https://github.com/pierrotsmnrd/grabKit.git', :tag => 'v1.2' }
   s.source_files = 'grabKit/grabKit/grabKitSources/*.{m,h}',
                    'grabKit/grabKit/grabKitSources/{configuration,constants,helpers,model,serviceGrabbers}/*.{m,h}',
                    'grabKit/grabKit/grabKitSources/serviceGrabbers/protocols/*.{m,h}',
