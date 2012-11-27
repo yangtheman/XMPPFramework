@@ -58,7 +58,6 @@ Pod::Spec.new do |s|
   s.subspec 'CoreDataStorage' do |cds|
     cds.source_files = 'Extensions/CoreDataStorage/**/*.{h,m}'
     cds.framework  = 'CoreData'
-    #cds.libraries = 'objc','system_kernel'
     cds.dependency 'XMPPFramework/Core'
   end
 
